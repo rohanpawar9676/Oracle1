@@ -62,8 +62,21 @@ update student221 set Maths=56,Physics=76,Science=98,History=88 where rollno=103
 update student221 set Maths=78,Physics=59,Science=64,History=75 where rollno=108;
 update student221 set Maths=57,Physics=45,Science=56,History=64 where rollno=109;
 update student221 set Maths=61,Physics=86,Science=81,History=97 where rollno=110;
+Total
+---------------------------------------------------------
+update student221 set Total= Maths+Physics+Science+History; 
+Avarege
+----------------------------------------------------------
+update student221 set Total= Maths+Physics+Science+History , Avarege=Total / 4 where rollno in(103,108,109,110);
 
-update student221 set Total= Maths+Physics+Science+History , Avarege=Total / 4 where rollno in(103,108,109,110):
+grade
+----------------------------------------------------------
+update student221 set grade='A' where Avarege>=70; 
+
+update student221 set grade='B' where Avarege between 60 and 69.99;
+
+update student221 set grade='c' where Avarege<=59; 
+
 
 
 
