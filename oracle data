@@ -77,6 +77,25 @@ update student221 set grade='B' where Avarege between 60 and 69.99;
 
 update student221 set grade='c' where Avarege<=59; 
 
+---------------------------------------------------------------------------------------------------------------------------------
+
+Create employee table 
+
+
+create table employee(empno number, name varchar2(30), salary number(9,2),dept varchar2(30));
+
+insert into employee values(201,'Rohan',30000.75,'Pune');
+insert into employee values(201,'Piyush',35000.75,'Mumbai');
+insert into employee values(201,'Rutvij',25000.75,'Bangalore');
+insert into employee values(201,'Shashank',21000.75,'Delhi');
+insert into employee values(201,'Siddesh',18000.75,'Gujrat');
+
+select * from employee;
+
+alter table employee add Roll varchar2(30); 
+
+if(salary>30000) display='Manager'
+
 
 
 
