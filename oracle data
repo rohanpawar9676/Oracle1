@@ -94,7 +94,6 @@ select * from employee;
 
 alter table employee add Roll varchar2(30); 
 
-if(salary>30000) display='Manager'
 
 
 
