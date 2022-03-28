@@ -1,0 +1,70 @@
+
+insert into mphasis221 values(101,'Deepak',50000.75,'01-jan-2010','Bangalore');
+
+insert into mphasis221 values(102,'Rohan',60000.75,'01-jan-2010','Pimpri');
+
+insert into mphasis221 values(103,'Shashank',80000.75,'01-jan-2010','Chinchwad');
+
+insert into mphasis221 values(104,'Piyush',90000.75,'01-jan-2010','Mumbai');
+
+insert into mphasis221 values(105,'Rutvij',40000.75,'01-jan-2010','Pune');
+
+
+select * from mphasis221;
+
+select * from global_name;
+
+select empno,name,salary+1000 as salaryBonus from mphasis221;
+
+select empno,name,salary-1000 as AfterDonation from mphasis221;
+
+select empno,name,salary*12 as Annualsalary from mphasis221;
+
+
+select empno,name,salary / 30 as perdaysalary from mphasis221;
+
+update mphasis221 set address='Pune' where name='Piyush'
+
+update mphasis221 set salary=700000 where name='Rutvij'
+
+
+
+update mphasis221 set phoneno=8877667898 where empno=102 and name='Rohan'
+
+update mphasis221 set phoneno=8877667898 where empno in (103,104,105)
+
+
+alter table mphasis221 add phoneno number 
+alter table mphasis221 drop column phoneno;
+
+delete from mphasis221 where empno=101;
+
+-------------------------------------------------------
+
+create table student221(rollno number,name varchar2(30),address varchar2(100));
+
+insert into student221 values(103,'Rohan','Pune');
+insert into student221 values(108,'Rutvij','Chinchwad');
+insert into student221 values(109,'Shashank','Pimpri');
+insert into student221 values(110,'Piyush','Bhosri');
+
+select *from student221;
+
+alter table student221 add Maths number 
+alter table student221 add Physics number 
+alter table student221 add Science number 
+alter table student221 add History number
+alter table student221 add Total number(9,2)
+alter table student221 add Avarege number 
+alter table student221 add Grade number(30)
+
+update student221 set Maths=56,Physics=76,Science=98,History=88 where rollno=103;
+update student221 set Maths=78,Physics=59,Science=64,History=75 where rollno=108;
+update student221 set Maths=57,Physics=45,Science=56,History=64 where rollno=109;
+update student221 set Maths=61,Physics=86,Science=81,History=97 where rollno=110;
+
+update student221 set Total= Maths+Physics+Science+History , Avarege=Total / 4 where rollno in(103,108,109,110):
+
+
+
+
