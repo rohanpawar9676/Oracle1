@@ -173,6 +173,7 @@ select to_char(sysdate,'year') from dual;
 select to_char(sysdate,'month') from dual;
 select to_char(sysdate,'yyyy') from dual;
 select to_char(sysdate,'dd month yyyy') from dual;
+select to_char(sysdate,'dd month yyyy hh:mm') from dual;
 
 
 
