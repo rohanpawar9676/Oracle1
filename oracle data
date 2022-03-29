@@ -99,3 +99,50 @@ alter table employee add Roll varchar2(30);
 
 
 
+
+
+
+
+--------------------------------------------------------------------------------------
+
+select * from mphasis221
+
+select * from mphasis221 where salary between 50000 and 60000;
+------------------------------------------
+in means the particular salary should match
+
+select * from mphasis221 where salary in (60000.75,70000.75);
+-------------------------------------------------
+except this other will be displayed
+
+select * from mphasis221 where salary not between 50000 and 60000;
+-------------------------------------------------------------
+
+except  this other will be displayed
+
+select * from mphasis221 where salary not in (60000,70000);
+
+
+
+
+
+---------------------------------------------------------------
+
+select * from mphasis221 order by name asc;
+select * from mphasis221 order by name;
+select * from mphasis221 order by salary;
+
+-----------------------------------------------------------------
+
+create table bank(accno number primary key, name varchar2(30) not null,balance number(9,3),email varchar2(30) unique);
+
+select * from bank
+insert into bank values(1029345998,'Rohan',589945.45,'rohanpawar9676@gmail.com');
+insert into bank values(2847539299,'Piyush',878394.67,'piyushs@gmail.com');
+insert into bank values(1784837838,'Rutvij',673747.56,'rutvijrc@gmail.com');
+
+
+
+
+
+
