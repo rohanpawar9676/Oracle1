@@ -150,6 +150,21 @@ insert into transaction values(1784837838,63884,76384);
 select * from transaction;
 
 
+create table emp_master(empno number primary key,name varchar2(30) not null, dept varchar2(30),salary number(9,2));
+
+insert into emp_master values(101,'Rohan','development',720000);
+insert into emp_master values(102,'Piyush','sales',720000);
+insert into emp_master values(103,'Rutvij','support',560000);
+
+select *from emp_master; 
+
+create table designation(ampno number references emp_master, designation varchar2(30), location varchar2(30));
+
+insert into designation values(101,'coding','Pune');
+
+select *from designation
+
+
 
 
 
