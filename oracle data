@@ -165,7 +165,14 @@ insert into designation values(101,'coding','Pune');
 select *from designation
 
 
+----------------------------------------------------------------------------------------------------
+DATE FUNCTION
 
+select to_char(sysdate,'month') from dual;
+select to_char(sysdate,'year') from dual;
+select to_char(sysdate,'month') from dual;
+select to_char(sysdate,'yyyy') from dual;
+select to_char(sysdate,'dd month yyyy') from dual;
 
 
 
