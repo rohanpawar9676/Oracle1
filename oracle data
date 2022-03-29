@@ -141,6 +141,14 @@ insert into bank values(1029345998,'Rohan',589945.45,'rohanpawar9676@gmail.com')
 insert into bank values(2847539299,'Piyush',878394.67,'piyushs@gmail.com');
 insert into bank values(1784837838,'Rutvij',673747.56,'rutvijrc@gmail.com');
 
+create table transaction(accno number references bank, trans number,total number);
+
+insert into transaction values(1029345998,12673,30056);
+insert into transaction values(2847539299,46578,53745);
+insert into transaction values(1784837838,63884,76384);
+
+select * from transaction;
+
 
 
 
