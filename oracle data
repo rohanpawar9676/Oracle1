@@ -175,5 +175,22 @@ select to_char(sysdate,'yyyy') from dual;
 select to_char(sysdate,'dd month yyyy') from dual;
 select to_char(sysdate,'dd month yyyy hh:mm') from dual;
 
+-----------------------------------------------------------------------------------------------------
+Group Fuction
+
+create table dept221(empno number,name varchar2(30),salary number(9,2),deptno number);
+
+insert into dept221 values(201,'Rohan',46000,16);
+insert into dept221 values(202,'Piyush',54000,34);
+insert into dept221 values(203,'Rutvij',39000,24);
+insert into dept221 values(204,'Shashank',58000,2);
+
+select * from dept221;
+
+select count(empno),deptno from dept221 group by deptno;
+select sum(salary),deptno from dept221 group by deptno;
+select avg(salary),deptno from dept221 group by deptno;
+select max(salary),deptno from dept221 group by deptno;
+select min(salary),deptno from dept221 group by deptno;
 
 
