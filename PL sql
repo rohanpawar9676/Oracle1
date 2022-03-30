@@ -13,3 +13,50 @@ else
 dbms_output.put_line('the greatest is :'||b);
 end if;
 end;
+
+
+
+---------------------------------------------------------------------
+
+even odd
+
+declare
+a number;
+
+
+begin
+a:=:a;
+
+if(mod(a,2)=0)then
+dbms_output.put_line('the no is even: '||a);
+
+else 
+dbms_output.put_line('the no is odd: '||a);
+end if;
+end;
+----------------------------------------------------------------------------
+
+gratest of 3
+
+declare
+a number;
+b number;
+c number;
+begin
+a:=:a;
+b:=:b;
+c:=:c;
+
+if(a>b and a>c)then
+dbms_output.put_line('the greatest is :'||a);
+
+elsif(b>a and b>c)then
+dbms_output.put_line('the greatest is :'||b);
+
+else 
+dbms_output.put_line('the greatest is :'||c);
+end if;
+end;
+
+-------------------------------------------------------------------------------------
+
